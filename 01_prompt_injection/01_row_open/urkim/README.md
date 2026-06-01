@@ -21,7 +21,7 @@ NAS 최종 구조에 맞춰 **`01_raw_open`(실수집/사람작성)** 과 **`02_
 | 10 | darkknight25/Prompt_Injection_Benign_Prompt_Dataset | https://huggingface.co/datasets/darkknight25/Prompt_Injection_Benign_Prompt_Dataset | mit | 영어 | 500행 (malicious 250 / benign 250) · attack_type 6종 · ⚠️중복 51% (새 242행) |
 | 11 | DavidTKeane/ai-prompt-ai-injection-dataset | https://huggingface.co/datasets/DavidTKeane/ai-prompt-ai-injection-dataset | mit + cc-by-4.0 | 영어(+다국어 공격) | 112행 (BLOCKED 75 / PASS 37) · attack_type·technique·language 메타 · 레드팀 eval용 · 중복 1.8% |
 | 12 | Gyr0ghost/promptwall-injection-dataset | https://huggingface.co/datasets/Gyr0ghost/promptwall-injection-dataset | mit | ⭐**한국어 포함** + 10개+ | 500행 (attack 430 / safe 70) · attack_type 8종 · severity · 한글 4행 · 중복 거의 없음 |
-| 13 | microsoft/llmail-inject-challenge | https://huggingface.co/datasets/microsoft/llmail-inject-challenge | mit | 영어 | ⭐**PI 전문(간접·이메일 주입)** · **198,009행**(실제 챌린지 제출 공격) · attack_attempt(True 148k/Unclear 38k/False 12k)·reason · 중복 0% · ⚠️원본 1.6GB→공격텍스트 추출본 `llmail_attacks_extracted.parquet`(40MB) · 🗄️**git 미포함(로컬 보관→NAS 직접 이관)** |
+| 13 | microsoft/llmail-inject-challenge | https://huggingface.co/datasets/microsoft/llmail-inject-challenge | mit | 영어 | ⭐**PI 전문(간접·이메일 주입)** · **198,009행**(실제 챌린지 제출 공격) · attack_attempt(True 148k/Unclear 38k/False 12k)·reason · 중복 0% · 🗄️**git 미포함(로컬 보관→NAS 이관)** |
 
 ## 02_synthetic (AI·템플릿 생성/합성 포함 — 10개)
 
@@ -36,7 +36,7 @@ NAS 최종 구조에 맞춰 **`01_raw_open`(실수집/사람작성)** 과 **`02_
 | 07 | Vaibhav-GOAT/nepi-prompts-dataset | https://huggingface.co/datasets/Vaibhav-GOAT/nepi-prompts-dataset | mit | 영어 | 4,000행 (고유 514) · 3분류 Safe/Suspicious/Malicious · NEPI(서사 임베디드) · ⚠️synthetic_template · 중복 0% |
 | 08 | nandhak12/finguard-finance-injection-dataset | https://huggingface.co/datasets/nandhak12/finguard-finance-injection-dataset | apache-2.0 | 영어 | ⭐**금융 도메인** · 라벨 SAFE/ATTACK · ⚠️무라이선스 xtram1 1,250행 제외 → **12,496행**(`finguard_no-xtram1.csv`) · synthetic 1,200 포함 |
 | 09 | wambosec/prompt-injections | https://huggingface.co/datasets/wambosec/prompt-injections | mit | 영어 | 5,766행 (train 5,190 / test 577, malicious 3,426 / benign 2,340) · category·goal·length_type · ⚠️**LLM 생성** · 중복 0% |
-| 10 | MAlmasabi/Indirect-Prompt-Injection-BIPIA-GPT | https://huggingface.co/datasets/MAlmasabi/Indirect-Prompt-Injection-BIPIA-GPT | cc-by-sa-4.0 | 영어 | ⭐**간접 PI(BIPIA)** · **70,000행**(malicious 35k=BIPIA / benign 35k=GPT-4o-mini 생성) · 분류(context·user_intent·label) · ⚠️benign 합성 · 중복 0% · `bipia.parquet`(34MB) |
+| 10 | MAlmasabi/Indirect-Prompt-Injection-BIPIA-GPT | https://huggingface.co/datasets/MAlmasabi/Indirect-Prompt-Injection-BIPIA-GPT | cc-by-sa-4.0 | 영어 | ⭐**간접 PI(BIPIA)** · **70,000행**(malicious 35k=BIPIA / benign 35k=GPT-4o-mini 생성) · 분류(context·user_intent·label) · ⚠️benign 합성 · 중복 0% |
 
 ---
 
