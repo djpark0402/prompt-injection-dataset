@@ -8,3 +8,6 @@
 # Python
 __pycache__/
 *.pyc
+
+# 대용량 데이터 (git 미포함, 로컬→NAS로 직접 이관)
+01_prompt_injection/01_row_open/urkim/01_raw_open/13_microsoft_llmail-inject-challenge/
