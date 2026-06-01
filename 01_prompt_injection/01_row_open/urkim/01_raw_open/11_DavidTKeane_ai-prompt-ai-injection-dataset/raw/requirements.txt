@@ -1,0 +1,6 @@
+# CyberRanger V42-Gold — Test Suite Requirements
+# Core: no external dependencies needed for run_all_tests.py (uses stdlib urllib)
+# Optional: needed for download_model.py and --moltbook-full flag
+
+huggingface_hub>=0.20.0   # Download GGUF from HuggingFace
+datasets>=2.14.0           # Load full Moltbook dataset (--moltbook-full flag)

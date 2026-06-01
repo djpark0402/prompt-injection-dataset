@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Hugging Face download cache
+**/.cache/
+**/.cache/huggingface/
+
+# Python
+__pycache__/
+*.pyc
